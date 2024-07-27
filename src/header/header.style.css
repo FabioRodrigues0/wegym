@@ -1,0 +1,35 @@
+*{
+    font-family: Lato,sans-serif;
+}
+
+img{
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav{
+    height:70px !important;
+    position: fixed;
+    opacity: 1;
+}
+
+ul{
+    padding-right: 20px;
+}
+
+.links{
+    color: white;
+}
+
+.links:hover
+{
+    color: #FFB200;
+}
+
+.bg-dark{
+    transition: all 0.2s !important;
+}
+
+.bg-dark-neutral{
+    transition: all 0.2s;
+}
