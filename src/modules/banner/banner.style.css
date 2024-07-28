@@ -1,0 +1,41 @@
+.banner {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.imageCardText {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    /* border: 1px solid #FFB200; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.imageCardTextInner {
+    margin-top: 50%;
+    height: 80px;
+    /* border: 1px solid greenyellow; */
+}
+
+.imgTextTitle {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFB200;
+}
+
+.imgText {
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    color: #FFB200;
+}
+
+#botaoInicial {
+    margin-left: 35%;
+}

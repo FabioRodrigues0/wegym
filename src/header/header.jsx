@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./header.style.css";
-import logo from "./img/Logo.png";
+import logo from "../assets/Logo.png";
 
 
 export const Header = () =>{
