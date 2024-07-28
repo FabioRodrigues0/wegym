@@ -4,7 +4,8 @@ import "./footer.style.css";
 
 export const Footer = () => {
     return (
-        <div className="container">
+        <div className="container bg-light">
+            {/*Só para se ver o texto, depois alterar cor do texto*/}
             <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
                 <div className="col mb-3">
                     <a href="/" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
