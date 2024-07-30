@@ -1,7 +1,14 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Carrocel from "../carrocel/carrocel.jsx";
 import "./banner.style.css";
 
+/*
+*
+* Banner
+*
+*  @params
+* */
 export default function Banner() {
     return (
         <div className="">
@@ -25,4 +32,4 @@ export default function Banner() {
             {/* CONTUEDO */}
         </div>
     );
-};
+}

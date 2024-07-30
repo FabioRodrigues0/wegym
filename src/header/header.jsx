@@ -15,13 +15,13 @@ export const Header = () =>{
                 <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-item nav-link links" href="#">Home</a>
+                            <a className="nav-item nav-link links" href="/">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-item nav-link links" href="#">Subscription</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-item nav-link links" href="#">Training</a>
+                            <a className="nav-item nav-link links" href="/training">Training</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-item nav-link links" href="#">Instructors</a>
