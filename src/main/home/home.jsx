@@ -8,7 +8,7 @@ import "./home.style.css";
 export const Home = () => {
     return (
         <div>
-            <Banner />
+            <Banner estado={true}/>
             <About />
         </div>
      );

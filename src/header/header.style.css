@@ -33,3 +33,128 @@ ul{
 .bg-dark-neutral{
     transition: all 0.2s;
 }
+
+#buttonHamb
+{
+    border: none!important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* BARRA 1_______________________________________ */
+
+ .bar1
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+    
+}
+
+.barra1Transform
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transform: rotate(45deg);
+    transform-origin: 0% 20%;
+    transition: all 1s;
+}
+
+.barra1TransformFinal
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transform: rotate(0deg);
+    transform-origin: 0% 20%;
+    transition: all 1s;
+}
+
+
+/* BARRA 2_______________________________________ */
+.bar2
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+    opacity: 1;
+}
+
+.barra2Transform
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+    opacity: 0;
+    
+}
+
+.barra2TransformFinal
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+    opacity: 1;
+    
+} 
+
+
+/* BARRA 3_______________________________________ */
+
+.bar3
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+.barra3Transform
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transform: rotate(-45deg);
+    transform-origin: 0% 20%;
+    transition: all 1s;
+}
+
+.barra3TransformFinal
+{
+    width: 30px;
+    height: 5px;
+    background-color: #FFB200;
+    margin-bottom: 5px;
+    border-radius: 10%;
+    transform: rotate(0deg);
+    transform-origin: 0% 20%;
+    transition: all 1s;
+}

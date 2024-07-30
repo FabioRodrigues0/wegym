@@ -1,0 +1,14 @@
+#about
+{
+    border: 1px solid #FFB200;
+}
+
+#containerJumbo
+{
+    background-color: transparent;
+}
+
+#containerJumbo div h1,p
+{
+    color: #FFB200;
+}
