@@ -6,7 +6,7 @@ import logo from "../assets/Logo.png";
 
 export const Header = () =>{
 
-    document.addEventListener("DOMContentLoaded", (event) => {
+    document.addEventListener("DOMContentLoaded", () => {
 
         addEventListener("scroll",function(){
             if(this.window.scrollY > 100)
@@ -26,9 +26,9 @@ export const Header = () =>{
       });
 
     //VARIAVEL CONTROLO DE FLUXO DO BOTAO
-    let run = true;
+    // let run = true;
 
-    function rodar()
+    /*function rodar()
     {
         var barraPrimeira = document.getElementById("b1");
         var barraSegunda = document.getElementById("b2");
@@ -62,11 +62,11 @@ export const Header = () =>{
             barraTerceira.classList.add("barra3TransformFinal");
             run = true;
         }
+*/
 
 
 
-
-    }
+    //}
 
 
 
