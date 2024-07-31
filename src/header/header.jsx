@@ -2,13 +2,12 @@
 import React from "react";
 import "./header.style.css";
 import logo from "../assets/Logo.png";
-import navLogo from "../assets/navbar/hamburgo.png"
 
 
 export const Header = () =>{
 
     document.addEventListener("DOMContentLoaded", (event) => {
-    
+
         addEventListener("scroll",function(){
             if(this.window.scrollY > 100)
             {
@@ -17,18 +16,18 @@ export const Header = () =>{
                 this.document.getElementById("barraDeNavegacao").classList.add("bg-dark");
             }
             else
-            { 
+            {
                 this.document.getElementById("barraDeNavegacao").classList.remove("bg-dark");
                 this.document.getElementById("barraDeNavegacao").classList.add("bg-dark-neutral");
             }
-            
+
         });
-    
+
       });
 
     //VARIAVEL CONTROLO DE FLUXO DO BOTAO
     let run = true;
-    
+
     function rodar()
     {
         var barraPrimeira = document.getElementById("b1");
@@ -66,58 +65,41 @@ export const Header = () =>{
 
 
 
-        
+
     }
 
-   
 
-      
+
+
     return (
         // BARRA NAVEGACAO
         <div>
-
-            <nav id="barraDeNavegacao" className="navbar navbar-expand-lg bg-dark-neutral fixed-top">
-                <div className="container-fluid">
-                    <img src={logo} alt="Logo We Gym" />
-                    
-                    <button onClick={rodar} id="hamburgo" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" >
-                    {/* <span class="navbar-toggler-icon"></span> */}
-                        {/* <img src={navLogo} alt="Icon de Hamburgo" /> */}
-                        <div id="b1" className="bar1"></div>
-                        <div id="b2" className="bar2"></div>
-                        <div id="b3" className="bar3"></div>
-                    </button>
-
-
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="navbar-nav ms-auto">
-
-                                <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Página Incial</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Subscrições</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Aulas</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Instrutores</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Contactos</a>
-                                </li>
-
-                        </ul>
-                    </div>
+           <nav id="barraDeNavegacao" className="navbar navbar-expand-lg bg-dark-neutral navbar-light fixed-top">
+                <img src={logo} alt="Logo We Gym" />
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                            <a className="nav-item nav-link links" href="#">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-item nav-link links" href="#">Subscription</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-item nav-link links" href="#">Training</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-item nav-link links" href="#">Instructors</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-item nav-link links" href="#">Contacts</a>
+                        </li>
+                        
+                    </ul>
                 </div>
             </nav>
-
-
         </div>
-
-
-
-
     );
 };

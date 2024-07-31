@@ -1,0 +1,13 @@
+.header-table span {
+    font-weight: 800;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.header-table td {
+    align-items: center;
+}
+
+.class-table {
+    border-radius: 10%;
+}
