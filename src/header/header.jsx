@@ -2,76 +2,13 @@
 import React from "react";
 import "./header.style.css";
 import logo from "../assets/Logo.png";
-import navLogo from "../assets/navbar/hamburgo.png"
+import navLogo from "../assets/navbar/hamburgo.png";
+import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
+import rodar from "../assets/mjs/header/hamburgoHover.mjs"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
 
 
 export const Header = () =>{
 
-    document.addEventListener("DOMContentLoaded", (event) => {
-    
-        addEventListener("scroll",function(){
-            if(this.window.scrollY > 100)
-            {
-                this.document.getElementById("barraDeNavegacao").classList.remove("bg-dark-neutral");
-                this.document.getElementById("barraDeNavegacao").style.transition = "transition: all 0.2s";
-                this.document.getElementById("barraDeNavegacao").classList.add("bg-dark");
-            }
-            else
-            { 
-                this.document.getElementById("barraDeNavegacao").classList.remove("bg-dark");
-                this.document.getElementById("barraDeNavegacao").classList.add("bg-dark-neutral");
-            }
-            
-        });
-    
-      });
-
-    //VARIAVEL CONTROLO DE FLUXO DO BOTAO
-    let run = true;
-    
-    function rodar()
-    {
-        var barraPrimeira = document.getElementById("b1");
-        var barraSegunda = document.getElementById("b2");
-        var barraTerceira = document.getElementById("b3");
-
-        if(run)
-        {
-            if(barraPrimeira.classList.contains("barra1TransformFinal"))
-            {
-                barraPrimeira.classList.remove("barra1TransformFinal");
-                barraSegunda.classList.remove("barra2TransformFinal");
-                barraTerceira.classList.remove("barra3TransformFinal");
-            }
-            barraPrimeira.classList.add("barra1Transform");
-            barraSegunda.classList.add("barra2Transform");
-            barraTerceira.classList.add("barra3Transform");
-            run = false;
-        }
-        else
-        {
-            // REAPARECER BARRA1
-            barraPrimeira.classList.remove("barra1Transform");
-            barraPrimeira.classList.add("barra1TransformFinal");
-
-            // REAPARECER BARRA2
-            barraSegunda.classList.remove("barra2Transform");
-            barraSegunda.classList.add("barra2TransformFinal");
-
-            // REAPARECER BARRA3
-            barraTerceira.classList.remove("barra3Transform");
-            barraTerceira.classList.add("barra3TransformFinal");
-            run = true;
-        }
-
-
-
-        
-    }
-
-   
-
-      
     return (
         // BARRA NAVEGACAO
         <div>
