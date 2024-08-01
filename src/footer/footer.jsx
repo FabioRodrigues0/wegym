@@ -1,7 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import "./footer.style.css";
 import logo from "../assets/icons/Logo.png";
+
 
 export const Footer = () => {
     return (
@@ -15,15 +19,21 @@ export const Footer = () => {
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li className="ms-3"><a className="" href="#">
-                        <i className="bi bi-facebook"></i>
-                    </a></li>
-                    <li className="ms-3"><a className="" href="#">
-                        <i className="bi bi-instagram"></i>
-                    </a></li>
-                    <li className="ms-3"><a className="" href="#">
-                        <i className="bi bi-twitter-x"></i>
-                    </a></li>
+                    <li className="ms-3">
+                        <a className="" href="#">
+                            <FaFacebook />
+                        </a>
+                    </li>
+                    <li className="ms-3">
+                        <a className="" href="#">
+                            <FaInstagram />
+                        </a>
+                    </li>
+                    <li className="ms-3">
+                        <a className="" href="#">
+                            <FaXTwitter />
+                        </a>
+                    </li>
                 </ul>
             </footer>
         </div>

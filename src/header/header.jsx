@@ -2,7 +2,6 @@
 import React from "react";
 import "./header.style.css";
 import logo from "../assets/icons/Logo.png";
-import navLogo from "../assets/navbar/hamburgo.png";
 import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
 import rodar from "../assets/mjs/header/hamburgoHover.mjs"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
 
@@ -23,24 +22,24 @@ export const Header = () =>{
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ms-auto">
 
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="/">Página Incial</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="/#about">Sobre</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="#">Subscrições</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="/training">Aulas</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="#">Instrutores</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-item nav-link links" href="#">Contactos</a>
-                            </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="/">Página Incial</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="/">Página Incial</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="#">Subscrições</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="/training">Aulas</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="/instructors">Instrutores</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-item nav-link links" href="#">Contactos</a>
+                                </li>
 
                         </ul>
                     </div>
