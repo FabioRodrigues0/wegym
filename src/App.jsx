@@ -7,6 +7,7 @@ import {Training} from "./main/training/training.jsx";
 import { Instructors } from "./main/instructors/instructors.jsx";
 import {Footer} from "./footer/footer.jsx";
 import "./App.css";
+import Subscriptions from "./main/subscriptions/subscriptions.jsx";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Home />}/>
+                        <Route path="/subcriptions" element={<Subscriptions />}/>
                         <Route path="/training" element={<Training />}/>
                         <Route path="/instructors" element={<Instructors />}/>
                     </Routes>
