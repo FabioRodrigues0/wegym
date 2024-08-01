@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Header} from "./header/header.jsx";
 import {Home} from "./main/home/home.jsx";
 import {Training} from "./main/training/training.jsx";
+import { Instructors } from "./main/instructors/instructors.jsx";
 import {Footer} from "./footer/footer.jsx";
 import "./App.css";
 
@@ -17,6 +18,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<Home />}/>
                         <Route path="/training" element={<Training />}/>
+                        <Route path="/instructors" element={<Instructors />}/>
                     </Routes>
                 </BrowserRouter>
             </div>

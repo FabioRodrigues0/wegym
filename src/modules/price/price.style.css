@@ -17,6 +17,13 @@
     color: #FFF;
 }
 
+/* TEXTO TITLE CARD */
+
+.card-header h4
+{
+    color: #FFB200;
+}
+
 /* TEXTO PREÇO */
 
 .card-body h1
@@ -33,4 +40,14 @@
 .card-footer
 {
     height:30px;
+}
+
+.card-header
+{
+    border: 1px solid #FFB200;
+}
+
+.card-footer
+{
+    border: 1px solid #FFB200;
 }
