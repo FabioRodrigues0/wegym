@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Carrocel from "../carrocel/carrocel.jsx";
 import "./banner.style.css";
@@ -19,7 +20,7 @@ export default function Banner(state) {
                 <div>
                     <div className="imageCardText">
                         <div className="imageCardTextInner">
-                            <h1 className="text-center imgTextTitle">Bem-vindo ao WeGYM!</h1>
+                            <h1 className="text-center imgTextTitle display-1 fw-bold">Bem-vindo ao WeGYM!</h1>
                             <p className="text-center imgText">Veja alguns dos nossos planos disponíveis embaixo</p>
                             <button id="botaoInicial" className="btn btn-outline-warning">Clique Aqui</button>
                         </div>
@@ -28,5 +29,5 @@ export default function Banner(state) {
                 {/* CONTUEDO */}
             </div>
         );
-    
+
 };
