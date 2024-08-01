@@ -26,10 +26,10 @@ export const Header = () =>{
                                     <a className="nav-item nav-link links" href="/">Página Incial</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="/">Página Incial</a>
+                                    <a className="nav-item nav-link links" href="/#about">Sobre nós</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-item nav-link links" href="#">Subscrições</a>
+                                    <a className="nav-item nav-link links" href="/subcriptions">Subscrições</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-item nav-link links" href="/training">Aulas</a>
