@@ -1,7 +1,7 @@
 import React from "react";
-import imageOne from "../../assets/1.jpg";
-import imageTwo from "../../assets/2.jpg";
-import imageThree from "../../assets/3.jpg";
+import imageOne from "../../assets/images/1.jpg";
+import imageTwo from "../../assets/images/2.jpg";
+import imageThree from "../../assets/images/3.jpg";
 import "./carrocel.css";
 
 export default function Carrocel() {

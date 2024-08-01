@@ -3,4 +3,5 @@ export const db =[ {
     "instrutor": "",
     "data": "",
     "horario": "",
+    "descricao": "",
 }]

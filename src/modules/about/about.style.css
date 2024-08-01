@@ -1,14 +1,27 @@
-#about
-{
-    border: 1px solid #FFB200;
+#about {
+    background-color: #1f2223;
 }
 
-#containerJumbo
+#containerAbout
 {
     background-color: transparent;
 }
 
-#containerJumbo div h1,p
+#containerAbout div, p
 {
     color: #FFB200;
+}
+
+#containerAbout h1
+{
+    color: #ffffff;
+}
+
+.imageAbout{
+    height: 100%;
+    width: 25.5vw;
+    padding-left: 0 !important;
+    filter: brightness(50%);
+    object-fit: cover !important;
+    object-position: 100% 50% !important;
 }
