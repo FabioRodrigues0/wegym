@@ -4,10 +4,17 @@
     text-transform: uppercase;
 }
 
-.header-table td {
+.header-table tr {
     align-items: center;
+    text-align: center;
 }
 
-.class-table {
-    border-radius: 10%;
+.class-table td:hover {
+    background-color: aqua;
+}
+
+.class-table table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10% !important;
 }
