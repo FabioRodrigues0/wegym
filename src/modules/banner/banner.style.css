@@ -6,12 +6,12 @@
 }
 
 .imageCardText {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: 0 auto;
     /* border: 1px solid #FFB200; */
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -26,7 +26,7 @@
 .imgTextTitle {
     font-family: Lato, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 5em;
     color: #FFF;
 }
 
