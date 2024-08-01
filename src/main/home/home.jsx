@@ -2,6 +2,7 @@
 import React from "react";
 import Banner from "../../modules/banner/banner.jsx";
 import About from "../../modules/about/about.jsx";
+import Subscriptions from "../subscriptions/subscriptions.jsx";
 import "./home.style.css";
 
 
@@ -10,6 +11,7 @@ export const Home = () => {
         <div>
             <Banner estado={true}/>
             <About />
+            <Subscriptions />
         </div>
      );
 };

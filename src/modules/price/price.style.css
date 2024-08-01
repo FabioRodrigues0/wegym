@@ -1,0 +1,36 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+.card
+{
+    height: 100%;
+    background-color: transparent;
+}
+
+
+/* TEXTO */
+.card-body li
+{
+    font-family: Lato,sans-serif;
+    color: #FFF;
+}
+
+/* TEXTO PREÇO */
+
+.card-body h1
+{
+    font-family: Lato,sans-serif;
+    color: #FFF;
+}
+
+.text-muted{
+    font-family: Lato,sans-serif !important;
+    color: #FFF !important;
+}
+
+.card-footer
+{
+    height:30px;
+}
