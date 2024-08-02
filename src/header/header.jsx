@@ -13,8 +13,6 @@ export const Header = () =>{
                 <div className="container-fluid">
                     <img src={logo} alt="Logo We Gym" />
                     <button onClick={rodar} id="hamburgo" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  aria-expanded="false" >
-                    {/* <span class="navbar-toggler-icon"></span> */}
-                        {/* <img src={navLogo} alt="Icon de Hamburgo" /> */}
                         <div id="b1" className="bar1"></div>
                         <div id="b2" className="bar2"></div>
                         <div id="b3" className="bar3"></div>
