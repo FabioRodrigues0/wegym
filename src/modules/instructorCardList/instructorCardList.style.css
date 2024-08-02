@@ -1,8 +1,67 @@
+#divModal
+{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1; /* ENVIA PARA TRAS */
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    display: flex;/* flex or none */
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+}
+
+#modalDivText
+{
+    height: 600px;
+    width: 550px;
+    background: #1f2223;
+    /* border: 1px solid blue; */
+    margin: 70px auto auto auto;
+}
+
+#modalDivText h2
+{
+    /* border: 1px solid green; */
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    color: #FFF;
+}
+
+#modalDivText img
+{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid purple; */
+}
+
+#modalDivText p
+{
+    color: #FFF;
+    margin: 10px;
+}
+
+
 .card img
 {
-    height: 200px;
-    margin: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .card-body{
     left: 100px;
 }
+
+.card-body p{
+    color: #FFF;
+}
+
+.card-body h5{
+    color: #FFB200;
+}
+
