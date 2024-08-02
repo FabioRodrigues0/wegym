@@ -1,7 +1,8 @@
-.header-table span {
+.header-table {
     font-weight: 800;
     font-size: 0.9em;
     text-transform: uppercase;
+    background: #fff3cd
 }
 
 .header-table tr {
@@ -9,8 +10,8 @@
     text-align: center;
 }
 
-.class-table td:hover {
-    background-color: aqua;
+.class-table {
+    background-color: #1f2223;
 }
 
 .class-table table {
