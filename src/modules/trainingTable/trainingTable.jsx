@@ -4,7 +4,7 @@ import "./trainingTable.style.css";
 import {Container, Table} from "react-bootstrap";
 import formatDate from '../../assets/mjs/date/formatDate.mjs'
 import {ProductService} from '../../data/data.jsx';
-import Classroom from "../classroom/classroom.jsx";
+/*import Classroom from "../classroom/classroom.jsx";*/
 
 export const TrainingTable = () => {
     const daysWeek = [' ', 'seg', "ter", 'qua', 'qui', 'sex', 'sab', 'dom']
@@ -31,11 +31,11 @@ export const TrainingTable = () => {
     }
 
     writeObject();
-    const [aulas, setAulas] = useState([]);
+    /*const [aulas, setAulas] = useState([]);*/
 
-    useEffect(() => {
+   /* useEffect(() => {
         ProductService.getProducts().then(data => setAulas(data));
-    }, []);
+    }, []);*/
     /*console.log(aulas)*/
     return (
         <Container className="parent mt-5 pt-4">

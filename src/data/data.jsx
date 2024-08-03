@@ -78,7 +78,7 @@ export const ProductService = {
         ];
     },
 
-    getProductsMini() {
+    /*getProductsMini() {
         return Promise.resolve(this.getAulasData().slice(0, 5));
     },
 
@@ -88,5 +88,5 @@ export const ProductService = {
 
     getProducts() {
         return Promise.resolve(this.getAulasData());
-    },
+    },*/
 };

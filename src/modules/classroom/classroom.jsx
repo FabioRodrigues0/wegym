@@ -5,7 +5,7 @@ export default function Classroom(props) {
     const tem_aula = props.state;
     const name = props.name;
     const instrutor = props.instrutor;
-    const date = props.date;
+    /*const date = props.date;*/
     console.log(tem_aula);
     return (
         <div className="">
