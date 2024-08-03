@@ -1,7 +1,11 @@
 import React from "react";
 import "./instructorCardList.style.css";
-import inst1 from "../../assets/images/instrutores1.png";
-import modalShow from "../../assets/mjs/main/modal.mjs";
+import instMariana from "../../assets/images/instrutorMariana.png";
+import instAna from "../../assets/images/instrutorAna.png";
+import instPedro from "../../assets/images/instrutorPedro.png";
+import instJoao from "../../assets/images/instrutorJoao.png";
+import modalShow from "../../assets/mjs/main/modalShow.mjs";
+import modalHide from "../../assets/mjs/main/modalHide.mjs";
 
 export default function InstructorCardList() {
     return (
@@ -16,7 +20,8 @@ export default function InstructorCardList() {
                                 <h2></h2>
                                 <img alt="" />
                                 <p></p>
-                                <button className="btn btn-outline-warning">Reveja as suas aulas</button>
+                                <button className="btn btn-outline-warning mr-5 rever">Reveja as suas aulas</button>
+                                <button onClick={modalHide} className="btn btn-outline-warning">Voltar</button>
                             </div>
                         </div>
 
@@ -30,11 +35,11 @@ export default function InstructorCardList() {
 
                     {/* CARD 1 */}
                     <div id="cardOneImage" className="col-2">
-                        <img src={inst1} className="img-fluid rounded-start" alt="..." />
+                        <img src={instMariana} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div className="col-4">
                         <div id="cardOneText" className="card-body">
-                            <h5 className="card-title">Maria</h5>
+                            <h5 className="card-title">Mariana Sousa</h5>
                             <p className="card-text">This is a Maria card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <button onClick={() => modalShow("cardOneImage","cardOneText")} className="btn btn-outline-warning">Mais detalhes</button>
 
@@ -42,14 +47,14 @@ export default function InstructorCardList() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div id="cardTwo" className="col-2">
-                        <img src={inst1} className="img-fluid rounded-start" alt="..." />
+                    <div id="cardTwoImage" className="col-2">
+                        <img src={instJoao} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div id="cardTwoText" className="col-4">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
+                            <h5 className="card-title">João Martins</h5>
                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <button className="btn btn-outline-warning">Mais detalhes</button>
+                            <button onClick={() => modalShow("cardTwoImage","cardTwoText")} className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
                     </div>
@@ -62,27 +67,27 @@ export default function InstructorCardList() {
                 <div className="row ">
                     
                      {/* CARD 3 */}
-                    <div id="cardThree" className="col-2">
-                        <img src={inst1} className="img-fluid rounded-start" alt="..." />
+                    <div id="cardThreeImage" className="col-2">
+                        <img src={instPedro} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div id="cardThreeText" className="col-4">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
+                            <h5 className="card-title">Pedro Almeida</h5>
                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <button className="btn btn-outline-warning">Mais detalhes</button>
+                            <button onClick={() => modalShow("cardThreeImage","cardThreeText")} className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
                     </div>
 
                     {/* CARD 4 */}
-                    <div id="cardFour" className="col-2">
-                        <img src={inst1} className="img-fluid rounded-start" alt="..." />
+                    <div id="cardFourImage" className="col-2">
+                        <img src={instAna} className="img-fluid rounded-start" alt="..." />
                     </div>
                     <div id="cardFourText" className="col-4">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
+                            <h5 className="card-title">Ana Costa</h5>
                             <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <button className="btn btn-outline-warning">Mais detalhes</button>
+                            <button onClick={() => modalShow("cardFourImage","cardFourText")} className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
                     </div>
