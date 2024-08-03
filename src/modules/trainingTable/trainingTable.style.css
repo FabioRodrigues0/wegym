@@ -4,6 +4,9 @@
     text-transform: uppercase;
     background: #fff3cd
 }
+.body-table{
+    color: #FFFFFF;
+}
 
 .header-table tr {
     align-items: center;
