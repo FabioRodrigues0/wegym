@@ -5,7 +5,7 @@ import Classroom from "../classroom/classroom.jsx";
 export default function TrainingHours(props) {
     const row_key = props.index;
     const data = props.classes;
-    const data_filter = data.map((day, index) => (day.infoClass.filter(classroom => classroom.hour === row_key)))
+    const data_filter = data.map((day) => (day.infoClass.filter(classroom => classroom.hour === row_key)))
 
     return (
         <tr key={row_key}>
