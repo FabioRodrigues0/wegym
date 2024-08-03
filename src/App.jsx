@@ -5,6 +5,7 @@ import {Header} from "./header/header.jsx";
 import {Home} from "./main/home/home.jsx";
 import {Training} from "./main/training/training.jsx";
 import { Instructors } from "./main/instructors/instructors.jsx";
+import { Contacts } from "./main/contacts/contacts.jsx";
 import {Footer} from "./footer/footer.jsx";
 import "./App.css";
 import Subscriptions from "./main/subscriptions/subscriptions.jsx";
@@ -21,6 +22,7 @@ export default function App() {
                         <Route path="/subcriptions" element={<Subscriptions />}/>
                         <Route path="/training" element={<Training />}/>
                         <Route path="/instructors" element={<Instructors />}/>
+                        <Route path="/contacts" element={<Contacts />}/>
                     </Routes>
                 </BrowserRouter>
             </div>

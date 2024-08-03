@@ -1,0 +1,9 @@
+#inicioContainer
+{
+    margin-top: 50px;
+}
+
+#inicioContainer .row .col h1,p
+{
+    color: #FFF;
+}
