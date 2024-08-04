@@ -17,10 +17,11 @@ ul{
     color: white;
 }
 
-.links:hover
+.links:hover, .links:active
 {
     color: #FFB200;
 }
+
 
 .bg-dark{
     transition: all 0.2s !important;

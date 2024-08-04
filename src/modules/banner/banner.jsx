@@ -22,7 +22,7 @@ export default function Banner(state) {
                         <div className="imageCardTextInner">
                             <h1 className="text-center imgTextTitle display-1 fw-bold">Bem-vindo ao WeGYM!</h1>
                             <p className="text-center imgText">Veja alguns dos nossos planos disponíveis embaixo</p>
-                            <button id="botaoInicial" className="btn btn-outline-warning">Clique Aqui</button>
+                            <a href="/#about" id="botaoInicial" className="btn btn-outline-warning">Clique Aqui</a>
                         </div>
                     </div>
                 </div>
