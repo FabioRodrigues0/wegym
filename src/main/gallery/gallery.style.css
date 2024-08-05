@@ -1,0 +1,179 @@
+#listaFotos
+{
+    margin-top: 70px;
+
+}
+
+#linhaUm
+{
+    margin-bottom: 10px;
+}
+
+#linhaDois
+{
+    margin-bottom: 10px;
+}
+
+#linhaTres
+{
+    margin-bottom: 10px;
+}
+
+#linhaQuatro
+{
+    margin-bottom: 10px;
+}
+
+#linhaCinco
+{
+    margin-bottom: 10px;
+}
+
+#linhaSeis
+{
+    margin-bottom: 10px;
+}
+
+
+#imageOne
+{
+    background-image: url(../../assets/images/fitness-girl-using-dumbbell.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 300px;
+}
+
+#imageTwo
+{
+    background-image: url(../../assets/images/people-doing-indoor-cycling.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 300px;
+}
+
+#imageThree
+{
+    background-image: url(../../assets/images/people-doing-indoor-cycling_1.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 300px;
+}
+
+#imageFour
+{
+    background-image: url(../../assets/images/people-training-gym-full-shot.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageFive
+{
+    background-image: url(../../assets/images/young-woman-exercising-gym-long-shot.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageSix
+{
+    background-image: url(../../assets/images/people-taking-part-dance-therapy-class.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageSeven
+{
+    background-image: url(../../assets/images/beautiful-adult-women-working-out-together.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageEight
+{
+    background-image: url(../../assets/images/sule-makaroglu-YFmvjO3TP_s-unsplash.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageNine
+{
+    background-image: url(../../assets/images/bruce-mars-gJtDg6WfMlQ-unsplash.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageTen
+{
+    background-image: url(../../assets/images/mark-adriane-FH6JcaCrYJ0-unsplash_1.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageEleven
+{
+    background-image: url(../../assets/images/portrait-group-two-girls-gymnastics-fitness-trampolines-gym.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageTwelve
+{
+    background-image: url(../../assets/images/logan-weaver-lgnwvr-JlwBQnBeRiQ-unsplash.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
+
+#imageThirteen
+{
+    background-image: url(../../assets/images/john-fornander-TAZoUmDqzXk-unsplash.jpg);
+    /* background: linear-gradient(rgb(0,0,0,0.500),rgb(0,0,0,0.500)), url("../img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 500px;
+}
