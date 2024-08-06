@@ -32,7 +32,7 @@ export default function InstructorCardList() {
     return (
         <div>
 
-            <Container>
+            <Container className="instructorCards">
                 <Row className="ajusteCartao">
                     <Col>
                         <NewCard card={MarianaCard}/>

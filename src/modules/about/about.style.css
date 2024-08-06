@@ -1,5 +1,6 @@
 #about {
-    background-color: #1f2223;
+    background: rgb(33 37 41);
+    /*box-shadow: 0 .25rem .75rem rgba(220, 216, 216, 0.05);*/
 }
 
 #containerAbout

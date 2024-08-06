@@ -155,3 +155,18 @@ ul{
     transform-origin: 0 20%;
     transition: all 1s;
 }
+
+.ckeck-color input {
+    background-color: transparent;
+    border-color: #FFB200 !important;
+}
+
+.ckeck-color input:checked {
+    background-color: #FFB200;
+    color: black;
+    border-color: #FFB200 !important;
+}
+
+.ckeck-color input:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 177, 0, .25)
+}
