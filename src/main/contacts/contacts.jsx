@@ -1,20 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./contacts.style.css";
+import Banner from "../../modules/banner/banner.jsx";
 
 export const Contacts = () => {
     return (
         <div>
+            <Banner isWithCarrocel={false} title={"Contactos"} description={"Qualquer dúvida pode nos contactar através do formulário apresentado ou através dos contactos disponíveis."}/>
             <div id="darMargem"></div>
             {/* <!-- CONTAINER INICIO --> */}
             <div className="container px-4 py-5 mt-5 mb-5 p-0 rounded-3" id="featured-3">
-
                 <div className="row">
                     <div className="col">
                         <div className="jumbotron">
-                            <h1 className="display-4 text-white">Contactos</h1>
-                            <p className="lead text-white">Qualquer dúvida pode nos contactar através do formulário apresentado ou através dos contactos disponíveis.</p>
-                            <hr className="my-4" />
                             <p className="text-white">Para mais informações, não hesite em questionar.</p>
                         </div>
                     </div>

@@ -1,12 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./gallery.style.css";
+import Banner from "../../modules/banner/banner.jsx";
 
 //IMAGENS IMPORTADAS ATRAVES DE CSS
 
 export const Gallery = () => {
     return (
         <div>
+            <Banner isWithCarrocel={false} title={"Galeria"} />
             <div id="listaFotos" className="container">
 
                 <div id="linhaUm" className="row">
