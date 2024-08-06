@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./newCard.style.css";
-import {Container,Card, Col,Row} from "react-bootstrap";
+import {Card, Col,Row} from "react-bootstrap";
 import NewsCardModal from "../newCardModal/newCardModal.jsx";
 
 export const NewCard = (card, index) => {
