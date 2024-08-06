@@ -1,1 +1,5 @@
-
+.hour-cell {
+    width: 2vw;
+    vertical-align: middle;
+    text-align: center;
+}
