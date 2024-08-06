@@ -1,5 +1,5 @@
 import React from "react";
-import "./traininig.style.css";
+import "./traininigHours.style.css";
 import Classroom from "../classroom/classroom.jsx";
 
 export default function TrainingHours(props) {
