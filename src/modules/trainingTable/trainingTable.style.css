@@ -2,15 +2,16 @@
     font-weight: 800;
     font-size: 0.9em;
     text-transform: uppercase;
-    background: #fff3cd;
+    background: #FFB200 !important;
     text-align: center;
+    border-color: #FFB200;
 }
 .body-table{
     color: #FFFFFF;
 }
 
 .class-table {
-    background-color: #1f2223;
+    background-color: #FFB200 !important;
 }
 
 .class-table table {

@@ -6,6 +6,7 @@ export default function rodar()
     var barraPrimeira = document.getElementById("b1");
     var barraSegunda = document.getElementById("b2");
     var barraTerceira = document.getElementById("b3");
+    var listNav = document.getElementById("list-nav");
 
     if(run)
     {
@@ -14,10 +15,14 @@ export default function rodar()
             barraPrimeira.classList.remove("barra1TransformFinal");
             barraSegunda.classList.remove("barra2TransformFinal");
             barraTerceira.classList.remove("barra3TransformFinal");
+            listNav.classList.remove("d-block");
+            listNav.classList.add("justify-content-center");
         }
         barraPrimeira.classList.add("barra1Transform");
         barraSegunda.classList.add("barra2Transform");
         barraTerceira.classList.add("barra3Transform");
+        listNav.classList.remove("justify-content-center");
+        listNav.classList.add("d-block");
         run = false;
     }
     else
@@ -33,6 +38,8 @@ export default function rodar()
         // REAPARECER BARRA3
         barraTerceira.classList.remove("barra3Transform");
         barraTerceira.classList.add("barra3TransformFinal");
+        listNav.classList.remove("d-block");
+        listNav.classList.add("justify-content-center");
         run = true;
     }
 

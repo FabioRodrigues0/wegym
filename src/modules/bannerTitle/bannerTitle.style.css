@@ -1,0 +1,21 @@
+.banner-image{
+    overflow: hidden;
+    height: 60vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-title-background{
+    background-image: radial-gradient(circle, rgba(31, 34, 35, 0.7), rgb(33 37 41), rgba(31, 34, 35, 0.7));
+    height: 60vh;
+    width: 100vw !important;
+    padding: 0;
+    filter: brightness(50%);
+    object-fit: cover;
+}

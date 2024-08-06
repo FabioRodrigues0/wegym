@@ -15,7 +15,7 @@ export const TrainingTable = () => {
             <Table id="table-classrooms" variant="dark" className="class-table">
                 <thead className="table-warning">
                 <tr>
-                    <th scope="col"><span></span></th>
+                    <th scope="col" className="header-table"><span></span></th>
                     {data.map((day, index) => (
                         <th scope="col" className="header-table" key={index}>
                             <span>{day.headerDay}</span>
