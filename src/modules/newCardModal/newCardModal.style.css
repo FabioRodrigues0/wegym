@@ -1,0 +1,22 @@
+.card-no-border {
+    border: none !important;
+}
+
+.img-ajust {
+    object-fit: cover;
+}
+
+.img-size
+{
+    width: 100%;
+    height: auto;
+}
+
+#contained-modal-title-vcenter
+{
+    color: black;
+}
+
+#cardText{
+    color: black;
+}

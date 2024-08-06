@@ -1,0 +1,26 @@
+.card-ajust {
+    object-fit: cover;
+    min-height: 350px !important;
+}
+
+/* .img-ajust{
+    object-fit: cover;
+    min-height: 200px !important;
+} */
+
+.date-cards {
+    float: right !important;
+}
+
+.cardImage
+{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cardTitle
+{
+    color: #FFF;
+}
