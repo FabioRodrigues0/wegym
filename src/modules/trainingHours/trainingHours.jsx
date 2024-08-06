@@ -1,5 +1,5 @@
 import React from "react";
-import "./traininig.style.css";
+import "./traininigHours.style.css";
 import Classroom from "../classroom/classroom.jsx";
 
 export default function TrainingHours(props) {
@@ -9,7 +9,7 @@ export default function TrainingHours(props) {
 
     return (
         <tr key={row_key}>
-            <th scope="col"><span>{row_key}</span></th>
+            <th scope="col" className='hour-cell'><span>{row_key}</span></th>
             {data_filter.map((filter_classroom) => (
                 <td scope="col" className="" key={row_key}>
                     {(filter_classroom.length > 0)

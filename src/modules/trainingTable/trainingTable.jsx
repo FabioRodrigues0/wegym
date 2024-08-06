@@ -8,6 +8,7 @@ import TrainingHours from "../trainingHours/trainingHours.jsx";
 export const TrainingTable = () => {
 
     const [data, _setData] = React.useState(() => [...defaultTable])
+    console.log(data)
 
     return (
         <Container className="parent mt-5 pt-4">

@@ -20,7 +20,9 @@ export default function InstructorCardList() {
                                 <h2></h2>
                                 <img alt="" />
                                 <p></p>
-                                <button className="btn btn-outline-warning mr-5 rever">Reveja as suas aulas</button>
+                                <a className="nav-item nav-link links" href={"/training?s=teste"}>
+                                    <button className="btn btn-outline-warning mr-5 rever">Reveja as suas aulas</button>
+                                </a>
                                 <button onClick={modalHide} className="btn btn-outline-warning">Voltar</button>
                             </div>
                         </div>
