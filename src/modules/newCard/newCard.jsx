@@ -13,14 +13,14 @@ export const NewCard = (card, index) => {
         <Row>
                 <Col sm={4} key={index}>
                     {/*style={{width: '18rem'}}*/}
-                    <Card className="card-ajust" onClick={() => setModalShow(true)}>
+                    <Card className="card-ajust card-no-border" onClick={() => setModalShow(true)}>
                         <Card.Img variant="bottom" src={card.card.image} width={200} height={200} className="cardImage"/>
                     </Card>
                 </Col>
                 <Col sm={8}>
-                    <Card onClick={() => setModalShow(true)}>
+                    <Card className='card-no-border' onClick={() => setModalShow(true)}>
                         <Card.Body>
-                            <Card.Title className="cardTitle">{card.card.title}</Card.Title>
+                            <Card.Title className="cardTitle text-warning font-weight-bold">{card.card.title}</Card.Title>
                             <Card.Text>
                                 {card.card.content}
                             </Card.Text>
