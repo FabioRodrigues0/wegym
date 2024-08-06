@@ -34,7 +34,7 @@ export const Contacts = () => {
                     </div>
                     <div className="col-4">
                         <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2004.8668922708189!2d-8.651832249076932!3d41.15839781814434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246582ddd59001%3A0x9ee3f032e812e1fd!2sR.%20de%20Cir%C3%ADaco%20Cardoso%20186%2C%204150-212%20Porto!5e0!3m2!1spt-PT!2spt!4v1722870253504!5m2!1spt-PT!2spt" width="400" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2004.8668922708189!2d-8.651832249076932!3d41.15839781814434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246582ddd59001%3A0x9ee3f032e812e1fd!2sR.%20de%20Cir%C3%ADaco%20Cardoso%20186%2C%204150-212%20Porto!5e0!3m2!1spt-PT!2spt!4v1722870253504!5m2!1spt-PT!2spt" width="400" height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
