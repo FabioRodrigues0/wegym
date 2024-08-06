@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Card, Col,Row} from "react-bootstrap";
+import {Container,Col,Row} from "react-bootstrap";
 import "./instructorCardList.style.css";
 import NewCard from "../newCard/newCard";
 
