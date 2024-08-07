@@ -2,8 +2,8 @@
 import React, {useState} from "react";
 import "./modalLogin.style.css";
 import {Button, Form, Modal, Tab, Nav, Row, Col} from "react-bootstrap";
-//REGISTER BUTTON
-import { registerUser } from "../../assets/mjs/loginAndSign/login.mjs";
+import { registerUser } from "../../assets/mjs/loginAndSign/login.mjs"; //REGISTER
+import { loginUser } from "../../assets/mjs/loginAndSign/login.mjs"; //LOGIN
 
 export const ModalLogin = (props) => {
     const handleClose = props.onHide
@@ -57,7 +57,7 @@ export const ModalLogin = (props) => {
                                         <Button variant="secondary" onClick={handleClose}>
                                             Cancel
                                         </Button>
-                                        <Button variant="warning" type="submit">
+                                        <Button variant="warning" onClick={loginUser}>
                                             Submit
                                         </Button>
                                     </Modal.Footer>
