@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
 import "./modalLogin.style.css";
-import {Button, Form, Modal, Tab, Tabs, Nav, Row, Col} from "react-bootstrap";
+import {Button, Form, Modal, Tab, Nav, Row, Col} from "react-bootstrap";
 
 export const ModalLogin = (props) => {
     const handleClose = props.onHide

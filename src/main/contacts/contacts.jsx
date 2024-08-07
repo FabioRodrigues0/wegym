@@ -22,11 +22,11 @@ export const Contacts = () => {
                     <div className="col-5">
                         <form>
                             <div className="form-group">
-                                <label for="exampleInputEmail1"></label>
+                                <label htmlFor="exampleInputEmail1"></label>
                                 <input type="email" className="form-control border-warning text-warning bg-dark input-place" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite Nome" />
                             </div>
                             <div className="form-group mt-3">
-                                <label for="exampleFormControlTextarea1"></label>
+                                <label htmlFor="exampleFormControlTextarea1"></label>
                                 <textarea className="form-control border-warning text-warning bg-dark input-place" id="exampleFormControlTextarea1" rows="3" placeholder="Digite a sua questão"></textarea>
                             </div>
                             <button type="submit" className="btn btn-outline-warning mt-3 btn-lg">Enviar</button>
