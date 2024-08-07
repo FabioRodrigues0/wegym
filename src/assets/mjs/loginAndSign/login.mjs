@@ -79,21 +79,31 @@ export function verifyURL()
 {
     const currentUrl = window.location.href;
     const userMark = "/?user="
+    const userName = currentUrl.substring(28);
+
     let botaoLogin = document.getElementById("botaoLogin");
-
-
-    console.log(botaoLogin);
-    console.log(currentUrl);
+    let userLogin = document.getElementById("logoUser");
+    let imgUserLogin = userLogin.querySelector("img");
+    let userNameLogin = userLogin.querySelector("p");
 
     if(currentUrl.includes(userMark))
     {
-        alert("ALGUEM ESTA LOGADO!!!");
+        // alert("ALGUEM ESTA LOGADO!!!");
         botaoLogin.classList.add("d-none");
+
+        userLogin.classList.remove("d-none");
+        imgUserLogin.src = "/src/assets/images/userLogo.png";
+        imgUserLogin.alt = "user Logo";
+        userNameLogin.innerHTML = userName;
+
     }
     else
     {
-        let img = document.querySelector("#logoUser img");
-        img.src = "../../images/userLogo.png";
-        img.alt = "user Logo";
+        // alert("NINGUEM ESTA LOGADO!!!");
+        botaoLogin.classList.remove("d-none");
+
+        userLogin.classList.add("d-none");
+        imgUserLogin.src = "";
+        imgUserLogin.alt = "";
     }
 }

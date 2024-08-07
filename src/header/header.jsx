@@ -7,7 +7,6 @@ import rodar from "../assets/mjs/header/hamburgoHover.mjs";
 import ModalLogin from "../modules/modalLogin/modalLogin.jsx"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
 import { verifyURL } from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 
-
 export const Header = () =>{
     const [show, setShow] = useState(false);
 
@@ -67,6 +66,7 @@ export const Header = () =>{
 
                             <div id="logoUser" className="float-end text-end btn-login">
                                 <img src="" alt=""/>
+                                <p></p>
                             </div>
 
                         </div>

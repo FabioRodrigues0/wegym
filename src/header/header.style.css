@@ -175,3 +175,15 @@ ul{
     position: absolute;
     right: 2%;
 }
+
+
+#logoUser
+{
+    margin-top: 40px;
+}
+
+#logoUser p
+{
+    color: #FFB200;
+    margin-right: 5px;
+}
