@@ -37,7 +37,8 @@
 }
 
 .imageCardTextInner {
-    margin-top: 50%;
+    margin-top: 45%;
+    margin-bottom: 45%;
     height: 80px;
     /* border: 1px solid greenyellow; */
 }
