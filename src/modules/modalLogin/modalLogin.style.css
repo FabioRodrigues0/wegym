@@ -1,0 +1,23 @@
+.input-place::placeholder{
+    color: rgba(255, 178, 0, 0.29);
+}
+
+.tab-login-register a{
+    background-color: rgb(33 37 41) !important;
+    border-color: transparent !important;
+}
+
+.tab-login-register a[aria-selected="true"]{
+    color: #FFB200 !important;
+}
+
+.tab-login-register a[aria-selected="false"]{
+    color: rgba(255, 178, 0, .4) !important;
+}
+
+#modalLogin .modal{
+    --bs-modal-bg: transparent !important;
+}
+#modalLogin .nav-tabs {
+    --bs-nav-tabs-border-color: transparent !important;
+}

@@ -28,3 +28,7 @@ h1
     list-style: none;
 }
 
+.input-place::placeholder{
+    color: rgba(255, 178, 0, 0.29);
+}
+
