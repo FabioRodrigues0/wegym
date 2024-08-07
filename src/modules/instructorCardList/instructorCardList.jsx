@@ -16,9 +16,10 @@ export default function InstructorCardList() {
                     </div>
                     <div className="col-4">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">Mariana Sousa</h5>
+                            <p className="card-text">Mariana Sousa.</p>
+                            <p className="card-text"><small className="text-muted">Professora de Dança
+                            Licenciada em Dança – Menção Educação Física e Dança Escolar, pela Universidade de Coimbra; Professora de Dança e Group Trainer.</small></p>
                             <button className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
@@ -30,9 +31,12 @@ export default function InstructorCardList() {
                     </div>
                     <div className="col-4">
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">João Martins</h5>
+                            <p className="card-text">João Martins.</p>
+                            <p className="card-text"><small className="text-muted">Instrutor 
+
+                            
+Licenciado em Ciências do Desporto – Menção Educação Física e Desporto Escolar, pela Universidade de Coimbra; Personal Trainer e Group Trainer.</small></p>
                             <button className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
@@ -52,8 +56,9 @@ export default function InstructorCardList() {
                     <div className="col-4">
                         <div className="card-body">
                             <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <p className="card-text"> Pedro Almeida </p>
+                            <p className="card-text"><small className="text-muted">Instrutor 
+                            Licenciado em Desporto na Escola Superior de Desporto de Rio Maior; Pós-graduação em Exercício e Saúde na Escola Superior de Desporto de Rio Maior – Instituto Politécnico de Santarém. Instrutor responsável pelas avaliações físicas e corporais. Personal Trainer e Group Trainer.</small></p>
                             <button className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
@@ -66,8 +71,9 @@ export default function InstructorCardList() {
                     <div className="col-4">
                         <div className="card-body">
                             <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <p className="card-text">Ana Costa</p>
+                            <p className="card-text"><small className="text-muted">Professora de Yoga
+                            Licenciada em Ciências do Desporto – Menção Educação Física e Desporto Escolar, pela Universidade de Coimbra. Professora de Yoga e Group Trainer.</small></p>
                             <button className="btn btn-outline-warning">Mais detalhes</button>
 
                         </div>
