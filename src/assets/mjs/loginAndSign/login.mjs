@@ -85,8 +85,9 @@ export function verifyURL()
 
     let botaoLogin = document.getElementById("botaoLogin");
     let userLogin = document.getElementById("logoUser");
-    let imgUserLogin = userLogin.querySelector("img");
-    let userNameLogin = userLogin.querySelector("p");
+    console.log(userLogin)
+/*    let imgUserLogin = userLogin.querySelector("img");
+    let userNameLogin = userLogin.querySelector("p");*/
 
     if(currentUrl.includes(userMark))
     {
@@ -95,9 +96,9 @@ export function verifyURL()
         botaoLogin.classList.add("d-none");
 
         userLogin.classList.remove("d-none");
-        imgUserLogin.src = "/src/assets/images/userLogo.png";
-        imgUserLogin.alt = "user Logo";
-        userNameLogin.innerHTML = userName;
+        /*imgUserLogin.src = "/src/assets/images/userLogo.png";
+        imgUserLogin.alt = "user Logo";*/
+        /*userNameLogin.innerHTML = userName;*/
 
     }
     else
@@ -107,7 +108,7 @@ export function verifyURL()
         botaoLogin.classList.remove("d-none");
 
         userLogin.classList.add("d-none");
-        imgUserLogin.src = "";
-        imgUserLogin.alt = "";
+ /*       imgUserLogin.src = "";
+        imgUserLogin.alt = "";*/
     }
 }
