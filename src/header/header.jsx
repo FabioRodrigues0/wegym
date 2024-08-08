@@ -5,12 +5,15 @@ import logo from "../assets/icons/Logo.png";
 import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
 import rodar from "../assets/mjs/header/hamburgoHover.mjs";
 import ModalLogin from "../modules/modalLogin/modalLogin.jsx"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
+import { verifyURL } from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 
 export const Header = () =>{
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    addEventListener("DOMContentLoaded", verifyURL);
 
     return (
         // BARRA NAVEGACAO
@@ -55,11 +58,17 @@ export const Header = () =>{
                                 </li>
                             </ul>
 
-                            <div className="float-end text-end btn-login">
+                            <div id="botaoLogin" className="float-end text-end btn-login">
                                 <button type="button" className="btn btn-outline-warning me-2"
                                         onClick={handleShow}>Login
                                 </button>
                             </div>
+
+                            <div id="logoUser" className="float-end text-end btn-login">
+                                <img src="" alt=""/>
+                                <p></p>
+                            </div>
+
                         </div>
                     </div>
                 </nav>
