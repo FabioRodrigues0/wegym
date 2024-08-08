@@ -79,7 +79,9 @@ export function verifyURL()
 {
     const currentUrl = window.location.href;
     const userMark = "/?user="
-    const userName = currentUrl.substring(28);
+
+    const divideCurrentUrl = currentUrl.split("?");
+    const userName = divideCurrentUrl[1].substring(5);
 
     let botaoLogin = document.getElementById("botaoLogin");
     let userLogin = document.getElementById("logoUser");
@@ -88,7 +90,8 @@ export function verifyURL()
 
     if(currentUrl.includes(userMark))
     {
-        // alert("ALGUEM ESTA LOGADO!!!");
+        //LOGGED IN
+
         botaoLogin.classList.add("d-none");
 
         userLogin.classList.remove("d-none");
@@ -99,7 +102,8 @@ export function verifyURL()
     }
     else
     {
-        // alert("NINGUEM ESTA LOGADO!!!");
+        //NO ONE IS LOGGED IN
+        
         botaoLogin.classList.remove("d-none");
 
         userLogin.classList.add("d-none");
