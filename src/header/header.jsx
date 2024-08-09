@@ -10,9 +10,13 @@ import BadgeUser from "../modules/badgeUser/badgeUser.jsx"; //HIDE LOGIN BUTTON 
 
 export const Header = () =>{
     const [show, setShow] = useState(false);
+    const [emailUser, setEmailUser] = useState("");
+    const [showBadge, setShowBadge] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const handleShowBadge = () => setShowBadge(true);
 
     addEventListener("DOMContentLoaded", verifyURL);
 
@@ -69,7 +73,7 @@ export const Header = () =>{
                                 <img src="" alt=""/>
                                 <p></p>
                             </div>*/}
-                            <BadgeUser id="logoUser" email="fabio@test.pt"/>
+                            <BadgeUser show={showBadge} email=""/>
 
                         </div>
                     </div>
