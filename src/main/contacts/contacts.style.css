@@ -1,0 +1,34 @@
+p
+{
+    font-family: Lato, sans-serif;
+}
+
+h1
+{
+    font-family: Playfair Display, sans-serif;
+}
+
+#darMargem
+{
+    margin-top: 70px;
+}
+
+#inicioContainer .row .col h1,p
+{
+    color: #FFF;
+}
+
+#maisDetalhes
+{
+    margin-top: 50px;
+}
+
+#lista ul
+{
+    list-style: none;
+}
+
+.input-place::placeholder{
+    color: rgba(255, 178, 0, 0.29);
+}
+

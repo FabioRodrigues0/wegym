@@ -1,20 +1,24 @@
-.header-table span {
+.header-table {
     font-weight: 800;
     font-size: 0.9em;
     text-transform: uppercase;
-}
-
-.header-table tr {
-    align-items: center;
+    background: #FFB200 !important;
     text-align: center;
+    border-color: #FFB200;
+}
+.body-table{
+    color: #FFFFFF;
 }
 
-.class-table td:hover {
-    background-color: aqua;
+.class-table {
+    background-color: #FFB200 !important;
 }
 
 .class-table table {
-    border-spacing: 0;
-    border-collapse: separate;
     border-radius: 10% !important;
+}
+
+.class-table td {
+    margin: 0;
+    padding: 0;
 }

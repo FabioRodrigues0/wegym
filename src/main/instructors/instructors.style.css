@@ -1,0 +1,14 @@
+.instructTitle
+{
+
+    width: 100vw;
+    color: #FFF;
+    margin-top: 50px;
+    display: flex;
+}
+
+.instructTitle h1
+{
+    margin: 0 auto;
+}
+

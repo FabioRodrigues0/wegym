@@ -5,7 +5,14 @@
     padding: 0;
 }
 
-.imageCardText {
+.banner-witout-car {
+    height: 60vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.imageText-with-carrossel {
     height: 500px;
     width: 500px;
     margin: 0 auto;
@@ -17,8 +24,21 @@
     color: white;
 }
 
+.imageText-without-carrossel  {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    /* border: 1px solid #FFB200; */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 .imageCardTextInner {
-    margin-top: 50%;
+    margin-top: 45%;
+    margin-bottom: 45%;
     height: 80px;
     /* border: 1px solid greenyellow; */
 }

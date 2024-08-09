@@ -31,7 +31,7 @@ export const Price = (show) => {
                                 </ul>
                                 {(price)
                                     ? <button className="btn btn-lg btn-block btn-outline-warning">Compra</button>
-                                    : <ButtonSubscription/> }
+                                    : <ButtonSubscription typeButton={"free"}/> }
                             </div>
                             <div id="cardOneFooter" className="card-footer">
 
@@ -61,7 +61,7 @@ export const Price = (show) => {
                                 </ul>
                                 {(price)
                                     ? <button className="btn btn-lg btn-block btn-outline-warning">Compra</button>
-                                    : <ButtonSubscription/> }
+                                    : <ButtonSubscription typeButton={"normal"}/> }
                             </div>
                             <div id="cardTwoFooter" className="card-footer">
 
@@ -91,7 +91,7 @@ export const Price = (show) => {
                                 </ul>
                                 {(price)
                                     ? <button className="btn btn-lg btn-block btn-outline-warning">Compra</button>
-                                    : <ButtonSubscription/> }
+                                    : <ButtonSubscription typeButton={"premium"}/> }
                             </div>
                             <div id="cardThreeFooter" className="card-footer">
                             </div>

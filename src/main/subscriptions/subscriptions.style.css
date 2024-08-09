@@ -1,6 +1,6 @@
 #featured-3
 {
-    background-color: #1f2223;
+    background-color: rgb(33 37 41);
 }
 
 #subTitle
@@ -11,4 +11,9 @@
     font-weight: lighter;
     text-align: end;
 
+}
+
+hr
+{
+    border: 1px solid #FFF;
 }

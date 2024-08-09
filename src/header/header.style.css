@@ -17,10 +17,11 @@ ul{
     color: white;
 }
 
-.links:hover
+.links:hover, .links:active
 {
     color: #FFB200;
 }
+
 
 .bg-dark{
     transition: all 0.2s !important;
@@ -153,4 +154,30 @@ ul{
     transform: rotate(0deg);
     transform-origin: 0 20%;
     transition: all 1s;
+}
+
+.ckeck-color input {
+    background-color: transparent;
+    border-color: #FFB200 !important;
+}
+
+.ckeck-color input:checked {
+    background-color: #FFB200;
+    color: black;
+    border-color: #FFB200 !important;
+}
+
+.ckeck-color input:focus {
+    box-shadow: 0 0 0 .25rem rgba(253, 177, 0, .25)
+}
+
+/*#logoUser
+{
+    margin-top: 40px;
+}*/
+
+#logoUser p
+{
+    color: #FFB200;
+    margin-right: 0;
 }

@@ -24,7 +24,6 @@ export const About = () => {
                                 remix
                                 and restyle it to your liking.
                                 </p>
-                            <button className="btn btn-outline-warning" type="button">Example button</button>
                         </div>
                         <div className="col-sm-6 col-lg-5 p-0">
                             <img className="rounded-3 imageAbout float-end" src={imageOne} alt="about image"/>
