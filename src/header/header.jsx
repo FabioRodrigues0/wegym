@@ -5,7 +5,7 @@ import logo from "../assets/icons/Logo.png";
 import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
 import rodar from "../assets/mjs/header/hamburgoHover.mjs";
 import ModalLogin from "../modules/modalLogin/modalLogin.jsx"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
-import {verifyUrl, logOff} from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
+import {processWeb,sendData} from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 import BadgeUser from "../modules/badgeUser/badgeUser.jsx"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 
 export const Header = () =>{
@@ -16,20 +16,24 @@ export const Header = () =>{
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const handleShowBadge = () => setShowBadge(true);
+    // const handleShowBadge = () => setShowBadge(true);
 
     // Só funciona no Firefox
-    /*addEventListener("DOMContentLoaded", verifyUrl);*/
+    // addEventListener("DOMContentLoaded", verifyUrl);
     // Só funciona no Edge, Firefox, Opera, GoogleChrome
+
     document.onreadystatechange = () => {
         if (document.readyState === "complete") {
-            let [email,state ] =verifyUrl()
+            processWeb();
+            const [email,state] = sendData();
             setEmailUser(email);
-            setShow(state)
+            setShowBadge(state);
         }
-    };
+    };  
+
     // Só funciona no Edge e no Firefox e Opera
-    /*window.addEventListener("load", verifyUrl);*/
+    // window.addEventListener("load", verifyUrl);
+    // addEventListener("DOMContentLoaded",verifyUrl);
 
     return (
         // BARRA NAVEGACAO
@@ -74,14 +78,14 @@ export const Header = () =>{
                                     <a className="nav-item nav-link links" href="/contacts">Contactos</a>
                                 </li>
                             </ul>
-
+                        </div>
                             <div id="botaoLogin" className="float-end text-end btn-login">
                                 <button type="button" className="btn btn-outline-warning me-2"
                                         onClick={handleShow}>Login
                                 </button>
                             </div>
                             <BadgeUser show={showBadge} email={emailUser}/>
-                        </div>
+                        
                     </div>
                 </nav>
             </header>
