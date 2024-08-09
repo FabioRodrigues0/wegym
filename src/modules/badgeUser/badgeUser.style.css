@@ -8,3 +8,9 @@
     padding: 0.4% 1.0% 0.4% 1.0%;
     margin-right: 5px;
 }
+
+#btnDrop
+{
+    width:40px;
+    height:40px;
+}

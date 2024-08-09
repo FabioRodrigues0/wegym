@@ -98,7 +98,7 @@ export function processWeb()
     let botaoLoginUser = document.getElementById("botaoLogin"); //BOTAO LOGIN
     console.log(botaoLoginUser);
 
-    let userLogin = document.querySelector("#spanBadge"); //USER
+    // let userLogin = document.querySelector("#spanBadge"); //USER
     let dropLogin = document.querySelector("#dropdownBadge"); //DROP
 
     if(currentUrl.includes(userMark))
@@ -109,7 +109,7 @@ export function processWeb()
 
         changeRoutes(username);
         botaoLoginUser.classList.add("d-none");
-        userLogin.classList.remove("d-none");
+        // userLogin.classList.remove("d-none");
         dropLogin.classList.remove("d-none");
         status = true;
     }
@@ -117,7 +117,7 @@ export function processWeb()
     {
         //NO ONE IS LOGGED IN
         botaoLoginUser.classList.remove("d-none");
-        userLogin.classList.add("d-none");
+        // userLogin.classList.add("d-none");
         dropLogin.classList.add("d-none");
         status = false;
     }
