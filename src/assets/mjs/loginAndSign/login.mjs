@@ -104,7 +104,6 @@ export function verifyURL()
     else
     {
         //NO ONE IS LOGGED IN
-        
         botaoLogin.classList.remove("d-none");
 
         userLogin.classList.add("d-none");
