@@ -3,6 +3,7 @@ import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } fr
 
 const auth = getAuth();
 
+//REGISTO USUARIO
 export function registerUser()
 {
     
@@ -13,6 +14,7 @@ export function registerUser()
     //ENVIAR FIREBASE....
     if(receiveSignInInfo(email,password))
     {
+
         createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
@@ -22,21 +24,21 @@ export function registerUser()
 
             document.getElementById("formRegisterEmail").value = "";
             document.getElementById("formRegisterPassword").value = "";
-
-            // ...
         })
+
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            // ..
+            alert("Error: " + errorCode + " " + errorMessage);
         });
     }
     else
     {
-        alert("Ocorreu um erro!");
+        alert("Dados com formato incorreto!");
     }
 }
 
+//VALIDAR INFORMAÇÂO SOBRE EMAIL
 function receiveSignInInfo(email,password)
 {
     //EXPRESSAO REGULAR CARACTERES + @ + CARACTERES + .com (ou) .pt
@@ -53,13 +55,15 @@ function receiveSignInInfo(email,password)
     }
 }
 
-
+//LOGIN USUARIO
 export function loginUser()
 {
     let email = document.getElementById("formLoginEmail").value;
     let password = document.getElementById("formLoginPassword").value;
-
-    signInWithEmailAndPassword(auth, email, password)
+    
+    if(receiveSignInInfo(email,password))
+    {
+        signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed up 
             alert("WELCOME " + email);
@@ -73,8 +77,15 @@ export function loginUser()
             // ..
             alert(errorCode + " " + errorMessage);
         });
+    }
+    else
+    {
+        alert("Dados com formato incorreto!");
+    }
+    
 }
 
+//VERIFICAR TODAS AS VEZES SE EXISTE VARIAVEL GLOBAL USER DEFINIDA
 export function verifyURL()
 {
     const currentUrl = window.location.href;
@@ -91,6 +102,7 @@ export function verifyURL()
     if(currentUrl.includes(userMark))
     {
         //LOGGED IN
+        changeRoutes(userName);
 
         botaoLogin.classList.add("d-none");
 
@@ -109,4 +121,26 @@ export function verifyURL()
         imgUserLogin.src = "";
         imgUserLogin.alt = "";
     }
+}
+
+
+//ALTERA ROTAS PARA O EMAIL DE UTILIZADOR
+function changeRoutes(userEmail)
+{
+    let routes = document.querySelectorAll("#list-nav li a");
+
+    routes[0].href = "/?user=" + userEmail;
+    routes[1].href = "/#about/?user=" + userEmail;
+    routes[2].href = "/subcriptions/?user=" + userEmail;
+    routes[3].href = "/training/?user=" + userEmail;
+    routes[4].href = "/instructors/?user=" + userEmail;
+    routes[5].href = "/gallery/?user=" + userEmail;
+    routes[6].href = "/contacts/?user=" + userEmail;
+
+    console.log(routes);
+}
+
+export function logOff()
+{
+    window.location.href = "/";
 }
