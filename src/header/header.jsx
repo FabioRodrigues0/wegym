@@ -5,7 +5,7 @@ import logo from "../assets/icons/Logo.png";
 import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
 import rodar from "../assets/mjs/header/hamburgoHover.mjs";
 import ModalLogin from "../modules/modalLogin/modalLogin.jsx"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
-import { verifyURL,logOff } from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
+import {verifyUrl, logOff} from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 import BadgeUser from "../modules/badgeUser/badgeUser.jsx"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 
 export const Header = () =>{
@@ -18,7 +18,18 @@ export const Header = () =>{
 
     const handleShowBadge = () => setShowBadge(true);
 
-    addEventListener("DOMContentLoaded", verifyURL);
+    // Só funciona no Firefox
+    /*addEventListener("DOMContentLoaded", verifyUrl);*/
+    // Só funciona no Edge, Firefox, Opera, GoogleChrome
+    document.onreadystatechange = () => {
+        if (document.readyState === "complete") {
+            let [email,state ] =verifyUrl()
+            setEmailUser(email);
+            setShow(state)
+        }
+    };
+    // Só funciona no Edge e no Firefox e Opera
+    /*window.addEventListener("load", verifyUrl);*/
 
     return (
         // BARRA NAVEGACAO
@@ -39,7 +50,8 @@ export const Header = () =>{
                         </button>
 
                         <div className="collapse navbar-collapse text-align-center" id="navbarNavDropdown">
-                            <ul id='list-nav' className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 w-75">
+                            <ul id='list-nav'
+                                className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 w-75">
                                 <li className="nav-item">
                                     <a className="nav-item nav-link links" href="/">Página Incial</a>
                                 </li>
@@ -68,15 +80,7 @@ export const Header = () =>{
                                         onClick={handleShow}>Login
                                 </button>
                             </div>
-
-                            <div id="logoUser" className="float-end d-none text-end btn-login">
-                                <img src="" alt=""/>
-                                <p></p>
-                            </div>
-
-                                <button onClick={logOff} className="btn btn-outline-warning">Log out</button>
-                            </div>
-                        <BadgeUser show={showBadge} email=""/>
+                            <BadgeUser show={showBadge} email={emailUser}/>
                         </div>
                     </div>
                 </nav>

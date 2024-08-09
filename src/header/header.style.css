@@ -171,19 +171,13 @@ ul{
     box-shadow: 0 0 0 .25rem rgba(253, 177, 0, .25)
 }
 
-.btn-login {
-    position: absolute;
-    right: 2%;
-}
-
-
-#logoUser
+/*#logoUser
 {
     margin-top: 40px;
-}
+}*/
 
 #logoUser p
 {
     color: #FFB200;
-    margin-right: 0px;
+    margin-right: 0;
 }

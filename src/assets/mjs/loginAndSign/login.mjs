@@ -85,41 +85,35 @@ export function loginUser()
 }
 
 //VERIFICAR TODAS AS VEZES SE EXISTE VARIAVEL GLOBAL USER DEFINIDA
-export function verifyURL()
+export function verifyUrl()
 {
-    const currentUrl = window.location.href;
-    const userMark = "/?user=";
+    console.log("Entrei no verifyURL")
+    let currentUrl = window.location.href;
+    let userMark = "/?user=";
 
-    const divideCurrentUrl = currentUrl.split("?");
-    const userName = divideCurrentUrl[1].substring(5);
+    let divideCurrentUrl = currentUrl.split("?");
+    let userName = divideCurrentUrl[1].substring(5);
 
     let botaoLogin = document.getElementById("botaoLogin");
-    let userLogin = document.getElementById("logoUser");
-    console.log(userLogin)
-/*    let imgUserLogin = userLogin.querySelector("img");
-    let userNameLogin = userLogin.querySelector("p");*/
+    let userLogin = document.getElementById("spanBadge");
+    let dropLogin = document.getElementById("dropdownBadge");
 
     if(currentUrl.includes(userMark))
     {
         //LOGGED IN
         changeRoutes(userName);
-
         botaoLogin.classList.add("d-none");
-
         userLogin.classList.remove("d-none");
-        /*imgUserLogin.src = "/src/assets/images/userLogo.png";
-        imgUserLogin.alt = "user Logo";*/
-        /*userNameLogin.innerHTML = userName;*/
-
+        dropLogin.classList.remove("d-none");
+        return [userName, true]
     }
     else
     {
         //NO ONE IS LOGGED IN
         botaoLogin.classList.remove("d-none");
-
         userLogin.classList.add("d-none");
- /*       imgUserLogin.src = "";
-        imgUserLogin.alt = "";*/
+        dropLogin.classList.add("d-none");
+        return ["", false]
     }
 }
 
@@ -143,4 +137,9 @@ function changeRoutes(userEmail)
 export function logOff()
 {
     window.location.href = "/";
+}
+
+export function testFile()
+{
+    console.log("estouu no ficheiro")
 }
