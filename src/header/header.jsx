@@ -5,7 +5,7 @@ import logo from "../assets/icons/Logo.png";
 import "../assets/mjs/header/navbarShow.mjs"; //MODULO JS - FUNCAO DE APARECER E REAPARECER NAVBAR
 import rodar from "../assets/mjs/header/hamburgoHover.mjs";
 import ModalLogin from "../modules/modalLogin/modalLogin.jsx"; // MODULO JS - FUNCAO CONTROLO DE HAMBURGO BOTAO
-import { verifyURL } from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
+import { verifyURL,logOff } from "../assets/mjs/loginAndSign/login.mjs"; //HIDE LOGIN BUTTON WHEN USER CONNECTED
 
 export const Header = () =>{
     const [show, setShow] = useState(false);
@@ -64,9 +64,10 @@ export const Header = () =>{
                                 </button>
                             </div>
 
-                            <div id="logoUser" className="float-end text-end btn-login">
+                            <div id="logoUser" className="float-end d-none text-end btn-login">
                                 <img src="" alt=""/>
                                 <p></p>
+                                <button onClick={logOff} className="btn btn-outline-warning">Log out</button>
                             </div>
 
                         </div>

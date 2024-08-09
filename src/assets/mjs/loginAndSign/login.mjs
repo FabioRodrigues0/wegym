@@ -20,7 +20,6 @@ export function registerUser()
             // Signed up 
             alert("USER REGISTERED, YOU CAN NOW LOGGED IN");
             const user = userCredential.user;
-            console.log(user);
 
             document.getElementById("formRegisterEmail").value = "";
             document.getElementById("formRegisterPassword").value = "";
@@ -89,7 +88,7 @@ export function loginUser()
 export function verifyURL()
 {
     const currentUrl = window.location.href;
-    const userMark = "/?user="
+    const userMark = "/?user=";
 
     const divideCurrentUrl = currentUrl.split("?");
     const userName = divideCurrentUrl[1].substring(5);
