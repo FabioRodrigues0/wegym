@@ -9,20 +9,24 @@ const BadgeUser = (props) => {
     const colors = ["bg-primary", "bg-success", "bg-info", "bg-info", "bg-warning", "bg-danger"];
     const randomIndex = Math.floor(Math.random() * colors.length);
 
-    const classNames = ("avatar-circle rounded-circle text-end " + colors[randomIndex])
+    const classNames = ("btn btn-secondary card-no-border rounded-circle ") + colors[randomIndex]
+
     console.log(classNames);
     return (
         <div className="avatar" id="logoUser">
+
             {/*{(showState) ? classNames : classNames + " d-none"}*/}
-            <span id="spanBadge" className={(showState) ? classNames : classNames + " d-none"}>
-                {emailInitial.toLocaleUpperCase()}
-            </span>
-            <div id="dropdownBadge"  class="dropdown d-none">
-                <button class="btn btn-secondary dropdown-toggle bg-dark card-no-border" type="button" data-bs-toggle="dropdown"
+            <div id="dropdownBadge"  className="dropdown d-none" >
+                {/* <span id="spanBadge" className={(showState) ? classNames : `${classNames} d-none`}>
+                    {emailInitial.toLocaleUpperCase()}
+                </span> */}
+               
+                <button id="btnDrop" className={classNames} type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
+                {emailInitial.toLocaleUpperCase()}
                 </button>
-                <ul class="dropdown-menu bg-dark">
-                    <li><a onClick={logOff} className="btn btn-warning-outline m-0 text-warning">Log out</a></li>
+                <ul className="dropdown-menu bg-dark dropdown-menu-lg-end">
+                    <li><a onClick={logOff} className="btn btn-warning-outline m-0 text-warning dropdown-item">Log out</a></li>
                 </ul>
             </div>
         </div>

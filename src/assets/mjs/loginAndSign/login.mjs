@@ -3,6 +3,7 @@ import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } fr
 
 const auth = getAuth();
 
+
 //REGISTO USUARIO
 export function registerUser()
 {
@@ -84,38 +85,57 @@ export function loginUser()
     
 }
 
+let status = false;
+let username = "";
+
 //VERIFICAR TODAS AS VEZES SE EXISTE VARIAVEL GLOBAL USER DEFINIDA
-export function verifyUrl()
+export function processWeb()
 {
     console.log("Entrei no verifyURL")
     let currentUrl = window.location.href;
     let userMark = "/?user=";
 
-    let divideCurrentUrl = currentUrl.split("?");
-    let userName = divideCurrentUrl[1].substring(5);
+    let botaoLoginUser = document.getElementById("botaoLogin"); //BOTAO LOGIN
+    console.log(botaoLoginUser);
 
-    let botaoLogin = document.getElementById("botaoLogin");
-    let userLogin = document.getElementById("spanBadge");
-    let dropLogin = document.getElementById("dropdownBadge");
+    // let userLogin = document.querySelector("#spanBadge"); //USER
+    let dropLogin = document.querySelector("#dropdownBadge"); //DROP
 
     if(currentUrl.includes(userMark))
     {
         //LOGGED IN
-        changeRoutes(userName);
-        botaoLogin.classList.add("d-none");
-        userLogin.classList.remove("d-none");
+        let divideCurrentUrl = currentUrl.split("?");
+        username = divideCurrentUrl[1].substring(5);
+
+        changeRoutes(username);
+        botaoLoginUser.classList.add("d-none");
+        // userLogin.classList.remove("d-none");
         dropLogin.classList.remove("d-none");
-        return [userName, true]
+        status = true;
     }
     else
     {
         //NO ONE IS LOGGED IN
-        botaoLogin.classList.remove("d-none");
-        userLogin.classList.add("d-none");
+        botaoLoginUser.classList.remove("d-none");
+        // userLogin.classList.add("d-none");
         dropLogin.classList.add("d-none");
-        return ["", false]
+        status = false;
     }
 }
+
+export function sendData()
+{
+    if(status === true)
+    {
+        return [username,true];
+    }
+    else
+    {
+        return ["",false];
+    }
+}
+
+
 
 
 //ALTERA ROTAS PARA O EMAIL DE UTILIZADOR
