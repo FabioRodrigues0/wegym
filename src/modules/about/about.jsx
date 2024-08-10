@@ -11,26 +11,18 @@ export const About = () => {
                     <div className="row">
                         <div className="col-sm-6 col-lg-7 p-5">
                             <h1 className="display-3 fw-bold">Sobre</h1>
-                            <p className="col-md-11 fs-4">Using a series of utilities, you can create this jumbotron,
-                                just
-                                like
-                                the one in previous versions of Bootstrap. Check out the examples below for how you can
-                                remix
-                                and restyle it to your liking.
-                                Using a series of utilities, you can create this jumbotron,
-                                just
-                                like
-                                the one in previous versions of Bootstrap. Check out the examples below for how you can
-                                remix
-                                and restyle it to your liking.
-                                </p>
+                            <p className="col-md-11 fs-4">Buscamos promover a saúde, o equilíbrio e a autoestima,
+                                oferecendo uma variedade de programas de exercícios, treinos personalizados, máquinas e
+                                equipamento de qualidade para ajudar os nossos membros a tornarem-se a melhor versão
+                                deles próprios.
+                            </p>
                         </div>
                         <div className="col-sm-6 col-lg-5 p-0">
                             <img className="rounded-3 imageAbout float-end" src={imageOne} alt="about image"/>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );
