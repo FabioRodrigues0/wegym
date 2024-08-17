@@ -4,6 +4,8 @@
 
 # WeGym
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7beb9803bf994ecf8e690c6fc35eb9f5)](https://app.codacy.com/gh/FabioRodrigues0/wegym?utm_source=github.com&utm_medium=referral&utm_content=FabioRodrigues0/wegym&utm_campaign=Badge_Grade)
+
 ## 🚀 Apresentação do Projecto
 
 No âmbito do módulo de Desenvolvimento Web - Client Side, como projeto final foi proposto
